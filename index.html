@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Let's start working! </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jay's Page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" data-toggle="tab" href="#home">Jay Chen</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#about">About</a></li>
+            <li><a data-toggle="tab" href="#projects">Projects</a></li>
+            <li><a data-toggle="tab" href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >Dropdown<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">First</a></li>
+                <li><a href="#">Second</a></li>
+                <li><a href="#">Third</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+      <div class="row content">
+        <div class="col-sm-2 sidenav">
+          <div class="responsive">
+            <div class="gallery">
+              <img src="src/me.jpg" alt="me" width="320" height="320" />
+              <div class="desc">
+                <h4>Jay Chen</h4>
+                <p>
+                  Recently started learning web design techniques, including
+                  Html/ Css/ Javascript/ Bootstrap/ Npm/ Node.js/ React/ Express
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 text-left">
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>
+                Welcome to Jay's first website ( using html, css and bootstrap
+                to implement <b>SPA</b> & <b>RWD</b> ).
+              </p>
+              <p>
+                This web is for demonstration purposes. I will publish my static
+                website side projects using Github Page, or just put on demo
+                videos if the projects involve databases or backend techniques.
+              </p>
+            </div>
+            <div id="about" class="tab-pane fade">
+              <h3>ABOUT</h3>
+              <p>
+                Hi I am Jay! I'm new in website design, though I've been
+                programming since 2018. I had few classes in college, like C++
+                programming, R for data science, data structure and algorithm,
+                etc. After graduation from university, I had worked in
+                Biophotonics and Bioimaging Lab, where I started my web design
+                journey.
+              </p>
+            </div>
+            <div id="projects" class="tab-pane fade">
+              <h3>PROJECTS</h3>
+              <p>Still working...</p>
+            </div>
+            <div id="contact" class="tab-pane fade">
+              <h3>CONTACT</h3>
+              <p>
+                <span class="glyphicon glyphicon-envelope"></span>
+                Email : mail.hychen [at] gmail.com
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="col-sm-2 sidenav">
+          <div class="well">
+            <p>ADS</p>
+          </div>
+          <div class="well">
+            <p>ADS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <p>Jay Chen @ 2021</p>
+    </footer>
+  </body>
 </html>
