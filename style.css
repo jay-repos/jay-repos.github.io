@@ -64,4 +64,7 @@ div.desc {
   .videodemo {
     width: 100%;
   }
+  .tab-content h3 {
+    text-align: center;
+  }
 }
